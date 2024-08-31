@@ -11,43 +11,47 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Link from "next/link";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { SiRedis, SiRust, SiTauri } from "react-icons/si";
 import { TbMathSymbols } from "react-icons/tb";
 
 const projects = [
   {
-    icon: <SiRedis className="text-red-500"/>,
+    icon: <SiRedis className="text-red-500" />,
     title: "Redis Rust",
     description:
       "A Redis implementation with support for Replication, Rdb file, Streams and Transactions, I had a lot of fun working on this.",
     link: "https://github.com/shadrach-tayo/redis-rust",
   },
   {
-    icon: <SiTauri className="text-blue-500"/>,
+    icon: <SiTauri className="text-blue-500" />,
     title: "Notor",
     description:
       " A simple calender/meetings reminder MacOs tray app similar to notion calendar, has support for multiple google accounts integration. This was developed with Rust, tauri and nextjs. \
       I and a couple of friends use this everyday at work to keep track of our meetings and events",
     link: "https://github.com/shadrach-tayo/notor",
-    
   },
   {
-    icon: <TbMathSymbols className="text-black"/>,
+    icon: <TbMathSymbols className="text-black" />,
     title: "Calc-parser",
     description:
       "A simple mathematical language analyzer, parser, interpreter and compiler written in Rust.",
     link: "https://github.com/shadrach-tayo/calc-parser",
   },
   {
-    icon: <FaTerminal className="text-green-500"/>,
+    icon: <FaTerminal className="text-green-500" />,
     title: "Patter",
     description:
       "A Rust cli app for backing up your local data to multiple IPFS storage providers.",
     link: "https://github.com/shadrach-tayo/patter",
   },
   {
-    icon: <SiRust className="text-orange-500"/>,
+    icon: <SiRust className="text-orange-500" />,
     title: "Typester",
     description:
       "An awesome library to convert Rust types to Typescript types. This is not a comprehensive converter and doesn't handle all types but it's awesome anyway.",
@@ -201,14 +205,16 @@ export default function Home() {
                   <p className="text-black">{exp.summary}</p>
                   <Accordion type="single" collapsible className="w-fit">
                     <AccordionItem value="roles" className="w-fit border-none">
-                      <AccordionTrigger className="py-2 underline w-fit flex itens-center justify-start gap-2 ">View more</AccordionTrigger>
+                      <AccordionTrigger className="py-2 underline w-fit flex itens-center justify-start gap-2 ">
+                        View more
+                      </AccordionTrigger>
                       <AccordionContent>
                         <ul className="list-disc list-inside flex flex-col gap-1">
-                       {exp.description.map((desc, index) => (
-                          <li key={index} className="text-black text-md">
-                            {desc}
-                          </li>
-                        ))}
+                          {exp.description.map((desc, index) => (
+                            <li key={index} className="text-black text-md">
+                              {desc}
+                            </li>
+                          ))}
                         </ul>
                       </AccordionContent>
                     </AccordionItem>
@@ -223,16 +229,19 @@ export default function Home() {
           <h2 className="text-xl font-semibold mb-4">Recent Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {projects.map((project, index) => (
-              <Card
+              <Link
                 key={index}
-                className="hover:border-gray-100 hover:shadow-lg transition-all duration-300 hover:animate-slide-up"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border bg-card text-card-foreground shadow-sm hover:border-gray-100 hover:shadow-lg transition-all duration-300 hover:animate-slide-up"
               >
-                <CardContent className="p-4">
+                <div className="p-6 p-4">
                   <div className="text-2xl mb-2">{project.icon}</div>
                   <h3 className="font-semibold">{project.title}</h3>
                   <p className="text-sm text-gray-600">{project.description}</p>
-                </CardContent>
-              </Card>
+                </div>
+              </Link>
             ))}
           </div>
         </section>
