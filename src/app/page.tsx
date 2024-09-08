@@ -65,16 +65,17 @@ const experience = [
     company: "Desci Labs",
     date: "2022 - PRESENT",
     summary:
-      "Designed and implemented an ERC specification for soul-bound(Account bound) tokens (SBT) for Decentralized society tooling",
+      "Core software engineering across the stack (fronted/backend/blockchain), Lead the design, implementation and maintainance of distributed systems solutions, Major product/features owner.",
     description: [
-      "Designed and implemented an ERC specification for soul-bound(Account bound) tokens (SBT) for Decentralized society tooling",
-      "Development an web3 dApp for managing SBTs and a Decentralized science project using Nextjs and typescript etc",
       "Leading engineering efforts in the development and migration of desci-nodes web architecture to an offline-first collaborative editor for Researchers to develop/share Researches using (Automerge, websockets, postgres, etc)",
       "Lead developer in the specification/implementation of Autonomous Research communities (ARC) to enable peer review on the node platforms",
+      "Development of in-browser fast and performant pdf viewer and next generation code/pdf annotator for rapid scientific research development",
       "Lead engineering efforts of the implementation of attestations and comments to support ARCs",
       "Implemented a state of art Pdf/Code Annotations to enhance modern peer review experience.",
       "Open source collaborator: worked with engineers/maintainers of popular open source project (Automerge) we use to further ease adoption.",
-      "Designed and development a discourse plugin integration for displaying desoc badges",
+      // "Designed and development a discourse plugin integration for displaying desoc badges",
+      "Designed and implemented an ERC specification for soul-bound(Account bound) tokens (SBT) for Decentralized society tooling",
+      "Development an web3 dApp for managing SBTs and a Decentralized science project using Nextjs and typescript etc",
     ],
   },
   {
