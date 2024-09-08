@@ -4,6 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import {
   FaChevronDown,
+  FaDownload,
+  FaFilePdf,
   FaGithub,
   FaLinkedin,
   FaRegEnvelope,
@@ -19,6 +21,7 @@ import {
 } from "@/components/ui/accordion";
 import { SiRedis, SiRust, SiTauri } from "react-icons/si";
 import { TbMathSymbols } from "react-icons/tb";
+import { DownloadCloudIcon } from "lucide-react";
 
 const projects = [
   {
@@ -130,46 +133,58 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-5">
       <div className="container px-4 py-8 max-w-3xl">
-        <header className="mb-8">
-          <Image
-            src="/shadrach.webp"
-            alt="Shadrach Oloyede"
-            width={70}
-            height={70}
-            className="rounded-full mb-4"
-          />
-          <h1 className="text-2xl font-bold">Shadrach Oloyede</h1>
-          <p className="text-gray-600">Blockchain | Distributed Systems</p>
-          <div className="flex justify-start space-x-4 mt-4">
-            <a
-              href="https://x.com/oloyedeshadrach"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="w-5 h-5" />
-            </a>
-            <a
-              href="https://github.com/shadrach-tayo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="w-5 h-5" />
-            </a>
-            <a
-              href="https://linkedin.com/in/shadrach-oloyede"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="w-5 h-5" />
-            </a>
-            <a
-              href="mailto:shadrach@oloyede.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaRegEnvelope className="w-5 h-5" />
-            </a>
+        <header className="flex items-end justify-between mb-8">
+          <div>
+            <Image
+              src="/shadrach.webp"
+              alt="Shadrach Oloyede"
+              width={70}
+              height={70}
+              className="rounded-full mb-4"
+            />
+            <h1 className="text-2xl font-bold">Shadrach Oloyede</h1>
+            <p className="text-gray-600">Full Stack | Blockchain | Distributed Systems</p>
+            <div className="flex justify-start space-x-4 mt-4">
+              <a
+                href="https://x.com/oloyedeshadrach"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="w-5 h-5" />
+              </a>
+              <a
+                href="https://github.com/shadrach-tayo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="w-5 h-5" />
+              </a>
+              <a
+                href="https://linkedin.com/in/shadrach-oloyede"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="mailto:shadrach@oloyede.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaRegEnvelope className="w-5 h-5" />
+              </a>
+            </div>
+
           </div>
+          <a
+            href="https://drive.google.com/file/d/1ioLyArpuWPgLJkLcUTO5hJ-RLrND7FbJ/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center mt-4 text-black border border-gray-500 hover:border-gray-900 rounded-lg px-3 py-1"
+          >
+            <DownloadCloudIcon className="w-5 h-5 mr-2" />
+            Download Resume
+          </a>
         </header>
 
         <div className="w-full h-[1px] bg-gray-200 my-3"></div>
