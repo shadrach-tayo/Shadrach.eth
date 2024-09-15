@@ -180,7 +180,7 @@ export default function Home() {
                 <FaLinkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:shadrach@oloyede.com"
+                href="mailto:shadrachtemitayo@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
