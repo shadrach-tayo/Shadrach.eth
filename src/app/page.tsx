@@ -70,7 +70,8 @@ const experience = [
     summary:
       "Core software engineering across the stack (fronted/backend/blockchain), Lead the design, implementation and maintainance of distributed systems solutions, Major product/features owner.",
     description: [
-      "Designed and implemented microservices architecture to streamline development, improve scalability, and enable independent deployment of services.",,
+      "Designed and implemented microservices architecture to streamline development, improve scalability, and enable independent deployment of services.",
+      ,
       "Developed, containerized, and deployed backend services using Docker and Kubernetes, ensuring high availability and fault tolerance.",
       "Worked with the team to build a robust search platform for imported openAlex research data using Elasticsearch, improving data accessibility and retrieval efficiency to provide seamless search experience to users.",
       "Automated infrastructure provisioning and configuration management using Terraform, improving consistency across environments.",
@@ -132,14 +133,13 @@ const experience = [
 ];
 
 const keyskills = [
-  "Microservices Architecture",
-"Docker & Kubernetes",
-"Infrastructure as Code (Terraform)",
-"Real-time WebSocket Communication",
-"API Development & Optimization",
-"Scalable System Design",
-"Cloud Services (AWS, GCP, Azure)",
-"Elasticsearch & Search Platform Development",
+  "Strong knowledge of Typescript, solidity and Rust (other related frameworks and tools)",
+  "Hands on experience designing and implementing Microservices Architecture",
+  "Docker & Kubernetes, Infrastructure as Code (Terraform)",
+  "API Development & Optimization",
+  "Software architecture & Scalable System Design",
+  "Cloud Services (AWS, GCP, Azure)",
+  "Elasticsearch & Search Platform Development",
 ];
 
 export default function Home() {
@@ -156,7 +156,9 @@ export default function Home() {
               className="rounded-full mb-4"
             />
             <h1 className="text-2xl font-bold">Shadrach Oloyede</h1>
-            <p className="text-gray-600">Full Stack | Blockchain | Distributed Systems</p>
+            <p className="text-gray-600">
+              Full Stack | Blockchain | Distributed Systems
+            </p>
             <div className="flex justify-start space-x-4 mt-4">
               <a
                 href="https://x.com/oloyedeshadrach"
@@ -187,10 +189,9 @@ export default function Home() {
                 <FaRegEnvelope className="w-5 h-5" />
               </a>
             </div>
-
           </div>
           <a
-            href="https://drive.google.com/file/d/1ioLyArpuWPgLJkLcUTO5hJ-RLrND7FbJ/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1d5ymL543iaICXAGqp66nofhaWEKj2Mu5/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center mt-4 text-black border border-gray-500 hover:border-gray-900 rounded-lg px-3 py-1"
