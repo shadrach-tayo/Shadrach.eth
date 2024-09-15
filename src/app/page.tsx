@@ -70,15 +70,17 @@ const experience = [
     summary:
       "Core software engineering across the stack (fronted/backend/blockchain), Lead the design, implementation and maintainance of distributed systems solutions, Major product/features owner.",
     description: [
-      "Leading engineering efforts in the development and migration of desci-nodes web architecture to an offline-first collaborative editor for Researchers to develop/share Researches using (Automerge, websockets, postgres, etc)",
-      "Lead developer in the specification/implementation of Autonomous Research communities (ARC) to enable peer review on the node platforms",
+      "Designed and implemented microservices architecture to streamline development, improve scalability, and enable independent deployment of services.",,
+      "Developed, containerized, and deployed backend services using Docker and Kubernetes, ensuring high availability and fault tolerance.",
+      "Worked with the team to build a robust search platform for imported openAlex research data using Elasticsearch, improving data accessibility and retrieval efficiency to provide seamless search experience to users.",
+      "Automated infrastructure provisioning and configuration management using Terraform, improving consistency across environments.",
+      "Implemented a real-time collaborative multiplayer server utilizing WebSocket and Auto Merge, enhancing interactive user experiences and supporting seamless collaboration in real time.",
+      "Collaborated with teams to ensure integration of backend services with frontend applications, improving overall performance and user experience.",
+      "Optimized API design, performance and reduced latency, improving response times and reliability for critical services.",
+      "Leading engineering efforts in the development and migration of web app to an offline-first collaborative editor for Researchers to develop/share Researches using (Automerge, websockets, postgres, etc)",
       "Development of in-browser fast and performant pdf viewer and next generation code/pdf annotator for rapid scientific research development",
-      "Lead engineering efforts of the implementation of attestations and comments to support ARCs",
       "Implemented a state of art Pdf/Code Annotations to enhance modern peer review experience.",
       "Open source collaborator: worked with engineers/maintainers of popular open source project (Automerge) we use to further ease adoption.",
-      // "Designed and development a discourse plugin integration for displaying desoc badges",
-      "Designed and implemented an ERC specification for soul-bound(Account bound) tokens (SBT) for Decentralized society tooling",
-      "Development an web3 dApp for managing SBTs and a Decentralized science project using Nextjs and typescript etc",
     ],
   },
   {
@@ -127,6 +129,17 @@ const experience = [
       "Documentation for web and mobile apps using Notion",
     ],
   },
+];
+
+const keyskills = [
+  "Microservices Architecture",
+"Docker & Kubernetes",
+"Infrastructure as Code (Terraform)",
+"Real-time WebSocket Communication",
+"API Development & Optimization",
+"Scalable System Design",
+"Cloud Services (AWS, GCP, Azure)",
+"Elasticsearch & Search Platform Development",
 ];
 
 export default function Home() {
