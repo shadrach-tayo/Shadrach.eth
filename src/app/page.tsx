@@ -25,121 +25,129 @@ import { DownloadCloudIcon } from "lucide-react";
 
 const projects = [
   {
+    icon: <FaTerminal className="text-blue-600" />,
+    title: "LiveMigrateAI",
+    description:
+      "AI guide to Canadian immigration: simplify your journey or upgrade status with AI-powered assistance, form automation, and expert guidance.",
+    link: "https://livemigrate.ai",
+  },
+  {
     icon: <SiRedis className="text-red-500" />,
     title: "Redis Rust",
     description:
-      "A Redis implementation with support for Replication, Rdb file, Streams and Transactions, I had a lot of fun working on this.",
+      "A Redis implementation with support for replication, RDB files, streams and transactions.",
     link: "https://github.com/shadrach-tayo/redis-rust",
   },
   {
     icon: <SiTauri className="text-blue-500" />,
     title: "Notor",
     description:
-      " A simple calender/meetings reminder MacOs tray app similar to notion calendar, has support for multiple google accounts integration. This was developed with Rust, tauri and nextjs. \
-      I and a couple of friends use this everyday at work to keep track of our meetings and events",
+      "Calendar/meetings reminder macOS tray app (similar to Notion Calendar) with multiple Google accounts; built with Rust, Tauri and Next.js. Used daily for meetings and events.",
     link: "https://github.com/shadrach-tayo/notor",
   },
   {
     icon: <TbMathSymbols className="text-black" />,
     title: "Calc-parser",
     description:
-      "A simple mathematical language analyzer, parser, interpreter and compiler written in Rust.",
+      "Mathematical language analyzer, parser, interpreter and compiler written in Rust.",
     link: "https://github.com/shadrach-tayo/calc-parser",
   },
   {
     icon: <FaTerminal className="text-green-500" />,
     title: "Patter",
     description:
-      "A Rust cli app for backing up your local data to multiple IPFS storage providers.",
+      "Rust CLI for backing up local data to multiple IPFS storage providers.",
     link: "https://github.com/shadrach-tayo/patter",
   },
   {
     icon: <SiRust className="text-orange-500" />,
     title: "Typester",
-    description:
-      "An awesome library to convert Rust types to Typescript types. This is not a comprehensive converter and doesn't handle all types but it's awesome anyway.",
+    description: "Library to convert Rust types to TypeScript types.",
     link: "https://github.com/shadrach-tayo/Typester",
   },
 ];
 
 const experience = [
   {
+    title: "Senior Software Engineer",
+    company: "DeSci Labs AG",
+    date: "Sept 2022 – Present",
+    summary:
+      "DeSci Labs builds solutions that make research faster, accessible, and more transparent—powered by AI and designed for the future of science.",
+    description: [
+      "Architecture and development of next-gen Research AI assistant web and mobile application using scientifically indexed articles for trusted peer-reviewed citations.",
+      "Led the research and implementation of our multiplayer server architecture on top of Cloudflare (Durable Objects, Hyperdrive), PartyKit WebSocket and Automerge (CRDT) library.",
+      "Kubernetes deployment workflow and monitoring setup on AWS.",
+      "Owned the full-stack development of several modules/features, API architecture, development and testing using TypeScript, Node.js, Postgres, and crypto libraries/frameworks.",
+      "Core engineering contributor to the DeSci Codex protocol for open science—libraries that create APIs on top of our internal Ceramic & smart contracts publishing architecture.",
+      "Smart contract architecture, development and testing of our Research object publishing and DPID registry protocol (Solidity, TypeScript, ethers.js, Foundry); use of advanced Solidity security testing tools for auditing.",
+      "Led UI engineering for Nodes Protocol web app: architectural setup, blockchain integration (wallets, ethers.js, wagmi), performance optimisation and avoiding SSR pitfalls for modern web3 apps.",
+    ],
+  },
+  {
     title: "Software Engineer",
-    company: "Desci Labs",
-    date: "2022 - PRESENT",
+    company: "JPEGVault DAO",
+    date: "Sept 2021 – Sept 2022",
     summary:
-      "Core software engineering across the stack (fronted/backend/blockchain), Lead the design, implementation and maintainance of distributed systems solutions, Major product/features owner.",
+      "Designed and deployed production DeFi smart contracts; architected serverless DAO infrastructure on AWS.",
     description: [
-      "Designed and implemented microservices architecture to streamline development, improve scalability, and enable independent deployment of services.",
-      ,
-      "Developed, containerized, and deployed backend services using Docker and Kubernetes, ensuring high availability and fault tolerance.",
-      "Worked with the team to build a robust search platform for imported openAlex research data using Elasticsearch, improving data accessibility and retrieval efficiency to provide seamless search experience to users.",
-      "Automated infrastructure provisioning and configuration management using Terraform, improving consistency across environments.",
-      "Implemented a real-time collaborative multiplayer server utilizing WebSocket and Auto Merge, enhancing interactive user experiences and supporting seamless collaboration in real time.",
-      "Collaborated with teams to ensure integration of backend services with frontend applications, improving overall performance and user experience.",
-      "Optimized API design, performance and reduced latency, improving response times and reliability for critical services.",
-      "Leading engineering efforts in the development and migration of web app to an offline-first collaborative editor for Researchers to develop/share Researches using (Automerge, websockets, postgres, etc)",
-      "Development of in-browser fast and performant pdf viewer and next generation code/pdf annotator for rapid scientific research development",
-      "Implemented a state of art Pdf/Code Annotations to enhance modern peer review experience.",
-      "Open source collaborator: worked with engineers/maintainers of popular open source project (Automerge) we use to further ease adoption.",
+      "Designed, implemented, tested and deployed multiple production DeFi smart contracts on EVM-compatible chains, with Oracle integration and multi-chain liquidity management.",
+      "Architected and implemented a serverless architecture for running the DAO using AWS Lambda, Serverless Framework, TypeScript and DynamoDB.",
+      "At peak, ~$2M held in JPEG smart contracts safely for DAO members.",
+      "Development of frictionless multi-wallet web3 login, staking and unstaking UIs and web3 analytics dashboard.",
+      "Developed subgraphs to index and query data from multiple smart contracts for dApps and serverless cron jobs.",
+      "Built complex web applications with Next.js, TypeScript, ethers.js, wagmi, and reusable components for smart contract integration and feedback mechanisms.",
     ],
   },
   {
-    title: "Blockchain Developer",
-    company: "JPegVault - Contractor",
-    date: "2021 - 2022",
+    title: "Software Engineer (Fullstack | Web3)",
+    company: "Angel Protocol (Better Giving)",
+    date: "Nov 2021 – May 2022",
     summary:
-      "Worked with multiple web3 projects including (JPEGVault Dao, now Desciety) as a contractor developing smart contracts and web3 applications",
+      "Better Giving is your nonprofit's free one-stop solution for fundraising, saving, and investing.",
     description: [
-      "Designed, Implemented, tested and deployed multiple smart contracts to support the daily activities of the DAO",
-      "Developed subgraphs to index and query data from the multiple smart contracts to be consumed by both the daaps and serverless cron jobs",
-      "Setup a serverless-backend infrastructure on AWS to support the activities of the Dao",
-      "Implement well structured and reusable components to support user staking, un-staking and claiming of rewards from smart contracts.",
-      "Designed and Developed serverless APIs using AWS lambda functions",
-      "Wrote unit tests and end-2-end tests in jest, cypress and react-testing-library for dApps built using Typescript and React",
-      "Transformed web3 UI designs into well-architected dAaps",
+      "Joined the team to develop one of crypto's first multi-chain crypto donations UIs with support for Terra and EVM chains (mainnet, Arbitrum, L2s such as Polygon).",
+      "Over $3M in donations processed on the multi-chain UI for foundations, charities, and crypto-native users globally.",
+      "Picked up Rust to contribute to the Cosmos Rust smart contract core library of the protocol.",
+      "Developed and maintained well-structured, reusable web3 UI components using TypeScript, React.js, and Tailwind.",
+      "Led implementation of unit, integration and end-to-end tests using Jest and React Testing Library.",
+      "Rust smart contract development (Cosmos) for vault business logic.",
     ],
   },
   {
-    title: "Full-stack Blockchain Developer",
-    company: "Angel Protocol",
-    date: "2021 - 2022",
+    title: "Software Engineering Intern",
+    company: "Simbi Interactives",
+    date: "Oct 2019 – Feb 2021",
     summary:
-      "Worked across the stack to develop web3 components for accepting payments in multiple chains (Eth, BnB, Terra, Polygon etc )",
+      "Led development of mobile EdTech/gaming apps; built desktop and web apps for education and admin.",
     description: [
-      "Worked across the stack to develop web3 components for accepting payments in multiple chains (Eth, BnB, Terra, Polygon etc )",
-      "Writing unit and e2e tests for critical components to increase the confidence in our software in production",
-      "Transformed web3 designs into well-structured and reusable UI components using Typescript, React.js, and Tailwindcss...",
-      "Developed web3 components for bridging the gap between user interaction with the smart contracts.",
-      "Unit tests, integration and end-2-end tests for major components of the codebase using jest and react-testing-library and other libraries.",
-      "Worked on Cosmos smart contracts to handle the business logic of vaults",
+      "Led the development of the Simbibot mobile EdTech/gaming app with 100k+ downloads on Google Play in its first few weeks in West Africa (Ionic, Angular, TypeScript).",
+      "Developed Bright Minds, an educational app for K–9 students across Nigeria for an international franchise.",
+      "Developed desktop apps for colleges to monitor education statistics and manage admin operations using Electron, TypeScript, Node.js and React.",
+      "Built reusable UI components using React, Storybook, and TypeScript.",
     ],
   },
   {
     title: "Frontend Developer",
-    company: "Simbi Interactives",
-    date: "2019 - 2021",
+    company: "TechMediaplace",
+    date: "Feb 2019 – Sept 2019",
     summary:
-      "I worked on a series of frontend projects for clients, Developed and maintained a educational mobile app using Ionic, angular, typescript that did 100k+ downloads on google playstore.",
+      "Developed university portals, dashboards and multi-tenant systems for higher institutions.",
     description: [
-      "Develop mobile apps used by thousands of students across Nigeria using Ionic, angular, typescript",
-      "Collaborate with designers and marketers to develop an immersive experience for mobile and web app users",
-      "Refactor and maintain existing mobile apps to improve performance and user experience.",
-      "Deploy Mobile and web apps using cutting edge technologies like AWS, docker etc.",
-      "Develop desktop app using Electron.",
-      "Documentation for web and mobile apps using Notion",
+      "Worked in a team to develop university portals and dashboards using React.",
+      "Developed a multi-tenant front-end dashboard system used by higher institutions across the country.",
+      "Refactored and maintained existing web applications to improve user experience.",
     ],
   },
 ];
 
 const keyskills = [
-  "Strong knowledge of Typescript, solidity and Rust (other related frameworks and tools)",
-  "Hands on experience designing and implementing Microservices Architecture",
-  "Docker & Kubernetes, Infrastructure as Code (Terraform)",
-  "API Development & Optimization",
-  "Software architecture & Scalable System Design",
-  "Cloud Services (AWS, GCP, Azure)",
-  "Elasticsearch & Search Platform Development",
+  "JavaScript, TypeScript, Solidity, Rust, Python",
+  "React.js, Next.js, Node.js, FastAPI, Nest, Actix, Axum",
+  "PostgreSQL, MySQL, MongoDB, Redis, DynamoDB",
+  "Docker, Kubernetes, AWS, Terraform, Prometheus, Grafana, Ansible, GitOps",
+  "Solidity, Foundry, Hardhat, Ethers.js, DeFi, EVM",
+  "Software architecture & scalable system design",
 ];
 
 export default function Home() {
@@ -191,7 +199,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1d5ymL543iaICXAGqp66nofhaWEKj2Mu5/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1IhtnSb61-k8ZBN8HZWfQDSBmk-JVswHI/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center mt-4 text-black border border-gray-500 hover:border-gray-900 rounded-lg px-3 py-1"
@@ -204,17 +212,13 @@ export default function Home() {
         <div className="w-full h-[1px] bg-gray-200 my-3"></div>
         <section className="mb-12 flex flex-col gap-2">
           <p className="max-w-2xl">
-            I am a coder who loves building elegant systems. I&apos;m most
-            interested in tackling and solving complex distributed systems
-            problems with Rust and other languages and tools, You&apos;d find me
-            talking or tweeting about this every now and then.
-          </p>
-          <p className="max-w-2xl">
-            {" "}
-            I&apos;ve had a lot of experience building web apps using React,
-            Typescript, Nodejs, and other frontend frameworks. I have a few
-            years of experience developing and deploying production-ready smart
-            contracts on Ethereum and other EVM-compatible chains.
+            I&apos;m a senior software engineer with over 7 years of experience
+            building complex web applications, distributed systems, and cloud
+            infrastructure. I lead full-stack teams and ship real-time systems
+            on AWS EKS and Cloudflare—from AI research assistants and data
+            pipelines (e.g. 250M+ publications on Elasticsearch/Kubernetes) to
+            collaborative servers on Durable Objects and CRDTs. I use AI tools
+            for analytics, monitoring and debugging in production.
           </p>
         </section>
 
@@ -235,7 +239,7 @@ export default function Home() {
                   <p className="text-black">{exp.summary}</p>
                   <Accordion type="single" collapsible className="w-fit">
                     <AccordionItem value="roles" className="w-fit border-none">
-                      <AccordionTrigger className="py-2 underline w-fit flex itens-center justify-start gap-2 ">
+                      <AccordionTrigger className="py-2 underline w-fit flex items-center justify-start gap-2 ">
                         View more
                       </AccordionTrigger>
                       <AccordionContent>
@@ -266,7 +270,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="rounded-lg border bg-card text-card-foreground shadow-sm hover:border-gray-100 hover:shadow-lg transition-all duration-300 hover:animate-slide-up"
               >
-                <div className="p-6 p-4">
+                <div className="p-4">
                   <div className="text-2xl mb-2">{project.icon}</div>
                   <h3 className="font-semibold">{project.title}</h3>
                   <p className="text-sm text-gray-600">{project.description}</p>
